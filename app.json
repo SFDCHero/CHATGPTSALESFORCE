@@ -1,0 +1,6 @@
+{
+	"name" : "ChatGPTSFDC",
+	"description" : "A Salesforce IDE - fast, free, and open source",
+	"repository" : "https://github.com/sfdchero007/chatgptsfdc",
+	"stack" : "heroku-18"
+}
