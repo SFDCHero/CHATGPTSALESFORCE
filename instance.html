@@ -35,15 +35,15 @@ All rights reserved.
 		  		</div>
 			</div>
 			
-			<h2 id="current" class="mt4 title-item">Hosting Your Own Instance of ASIDE</h2>
+			<h2 id="current" class="mt4 title-item">Hosting Your Own Instance of CHATGPT IDE</h2>
 			<div class="mt4 text-block">
-				It's now possible to spin up your own instance of ASIDE in just a few steps. Follow the guide below 
+				It's now possible to spin up your own instance of CHATGPT IDE in just a few steps. Follow the guide below 
 				to deploy a new version of the app and then configure the OAuth login.
 			</div>
 			
 			<h3 class="mt4 title-item">Prerequisites</h3>
 			<div class="mt4 text-block">
-				Before you can setup a new instance of ASIDE you're going to need a couple things:
+				Before you can setup a new instance of CHATGPT IDE you're going to need a couple things:
 				<br />
 				<ul>
 					<li>
@@ -59,10 +59,10 @@ All rights reserved.
 						<ul>
 							<li>
 								This org will be used to contain the <span class="important">Connected App</span> that 
-								facilitates the OAuth login ASIDE uses. 
+								facilitates the OAuth login CHATGPT IDE uses. 
 								This should probably be a <span class="term">developer edition</span> or 
 								<span class="term">production organization</span>, but any org will work. 
-								It's not necessarily the same org that you plan on logging into ASIDE with.  
+								It's not necessarily the same org that you plan on logging into CHATGPT IDE with.  
 								It can be, but it does not need to be.
 							</li>
 						</ul>
@@ -72,16 +72,16 @@ All rights reserved.
 			
 			<h3 class="mt4 title-item">Deploy the Heroku Application</h3>
 			<div class="mt4 text-block">
-				Click the button below to begin the deployment process for ASIDE.  It will open a new page 
+				Click the button below to begin the deployment process for CHATGPT IDE.  It will open a new page 
 				which contains a form with a couple fields relating to the deployment.
 				<br/>
-				<a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Ffillip%2Faside-io" target="_blank">
+				<a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Ffillip%2FCHATGPT IDE-io" target="_blank">
 					<img src="https://www.herokucdn.com/deploy/button.png" class="mt3" />
 				</a>
 				<br/><br/>
 				Fill out the <span class="term">App name</span> field. The <span class="term">App name</span> will dictate 
 				what the URL is to access the application.  For example, if the <span class="term">App name</span> is 
-				<span class="important">"my-aside"</span> then the URL is <span class="important">"https://my-aside.herokuapp.com"</span>.  
+				<span class="important">"my-CHATGPT IDE"</span> then the URL is <span class="important">"https://my-CHATGPT IDE.herokuapp.com"</span>.  
 				Click the <span class="term">Deploy app</span> button.
 			</div>
 			
@@ -97,10 +97,10 @@ All rights reserved.
 				values are not important.  Scroll down to the <span class="important">"API (Enable OAuth Settings)"</span> section and check the 
 				<span class="term">Enable OAuth Settings</span> checkbox.  A handful of additional fields should now be displaying in this section.
 				<br /><br />
-				Populate the required field <span class="term">Callback URL</span> with the URL to the instance of ASIDE you 
+				Populate the required field <span class="term">Callback URL</span> with the URL to the instance of CHATGPT IDE you 
 				just deployed with <span class="important">"/auth"</span> added to the end.  For example, if your new instance of 
-				ASIDE is available at <span class="important">"https://my-aside.herokuapp.com"</span> then the 
-				<span class="term">Callback URL</span> is <span class="important">"https://my-aside.herokuapp.com/auth"</span>.
+				CHATGPT IDE is available at <span class="important">"https://my-CHATGPT IDE.herokuapp.com"</span> then the 
+				<span class="term">Callback URL</span> is <span class="important">"https://my-CHATGPT IDE.herokuapp.com/auth"</span>.
 				<br /><br />
 				The last field you have to fill out to finish configuring the <span class="important">Connected App</span> is the 
 				<span class="term">Selected OAuth Scopes</span> field.  Choose a value of <span class="important">"Full access (full)"</span> 
@@ -113,7 +113,7 @@ All rights reserved.
 			
 			<h3 class="mt4 title-item">Add the Heroku Config Vars</h3>
 			<div class="mt4 text-block">
-				As a final step, you will need to populate the <span class="term">Config Vars</span> within Heroku in order for ASIDE's OAuth based 
+				As a final step, you will need to populate the <span class="term">Config Vars</span> within Heroku in order for CHATGPT IDE's OAuth based 
 				login to work.  When logged into Heroku and viewing the application dashboard for the Heroku app you deployed earlier, 
 				click the <span class="important">Settings</span> tab.  Within the <span class="term">Config Vars</span> section click 
 				<span class="important">Reveal Config Vars</span>.  Add the three new <span class="term">Config Vars</span> detailed below.
@@ -141,22 +141,22 @@ All rights reserved.
 						<span class="term">URL</span>
 						<ul>
 							<li>
-								This is the URL where the version of ASIDE is hosted at.  The <span class="term">App name</span> 
+								This is the URL where the version of CHATGPT IDE is hosted at.  The <span class="term">App name</span> 
 								defined earlier will dictate what the URL is to access the application.  For example, if the 
-								<span class="term">App name</span> is <span class="important">"my-aside"</span> then the 
+								<span class="term">App name</span> is <span class="important">"my-CHATGPT IDE"</span> then the 
 								URL is <span class="important">"z"</span>.
 							</li>
 						</ul>
 					</li>
 				</ul>
-				After adding these three <span class="term">Config Vars</span> you should be able to login to your new instance of ASIDE.
+				After adding these three <span class="term">Config Vars</span> you should be able to login to your new instance of CHATGPT IDE.
 			</div>
 			
 			<h2 class="mt4 title-item">All Done!</h3>
 			<div class="mt4 text-block">
-				You have now deployed your own copy of ASIDE and configured OAuth to work.  Your copy of ASIDE should be fully operational at 
+				You have now deployed your own copy of CHATGPT IDE and configured OAuth to work.  Your copy of CHATGPT IDE should be fully operational at 
 				this point.  If you still can't login, wait 10 minutes.  The <span class="important">Connected App</span> can sometimes take a bit to be available for use.
-				<span class="bold">Thanks for using ASIDE!</span>
+				<span class="bold">Thanks for using CHATGPT IDE!</span>
 			</div>
 			
 			<h3 class="mt4 title-item">Frequently Asked Questions</h3>
@@ -204,12 +204,12 @@ All rights reserved.
 				</div>
 				<div class="mt2">
 					Not by default.  However, you can configure the app in Heroku (from the <span class="term">Settings</span> tab 
-					in the Heroku application dashboard) to be directly connected to ASIDE's git repository and then 
+					in the Heroku application dashboard) to be directly connected to CHATGPT IDE's git repository and then 
 					enable automatic deploys to accomplish this.
 				</div>
 				
 				<div class="mt4">
-					<span class="italic bold">Can you tell me more about how the login for ASIDE works?</span>
+					<span class="italic bold">Can you tell me more about how the login for CHATGPT IDE works?</span>
 				</div>
 				<div class="mt2">
 					It uses the OAuth web server flow.  Salesforce has documentation on it 
@@ -221,13 +221,13 @@ All rights reserved.
 				</div>
 				<div class="mt2">
 					Probably not, but it's safest to leave it at that setting.  The definition of full access changes over time as 
-					Salesforce obtains new capabilities and permissions to go along with those capabilities.  When ASIDE was originally created it
+					Salesforce obtains new capabilities and permissions to go along with those capabilities.  When CHATGPT IDE was originally created it
 					needed full access but it probably does not need that much access now (e.g. looking at the scope list, it probably 
 					does not need access to wave and eclair data).
 				</div>
 				
 				<div class="mt4">
-					<span class="italic bold">Is there an easy way to hook up ASIDE to google analytics?</span>
+					<span class="italic bold">Is there an easy way to hook up CHATGPT IDE to google analytics?</span>
 				</div>
 				<div class="mt2">
 					Indeed there is!  Within the heroku config vars setup add a fourth key, its name should be 

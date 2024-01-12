@@ -1577,7 +1577,7 @@ var d3vCode = {
 		d3vPopups.showGlobalPanel('Find', '#chatgpt-popup');
 	},
 	sendMessage  : function() {
-		//const apiKey = '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';
+		const apiKey = 'ks';
 			var message = document.getElementById('message-input')
 			if(!message.value)
 			{
@@ -1600,7 +1600,7 @@ var d3vCode = {
 				headers: {
 					Accept: "application/json",
 					"Content-Type": "application/json",
-					Authorization: "Bearer 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",
+					Authorization: "Bearer "+apiKey,
 				},
 				body: JSON.stringify({
 					model: "gpt-3.5-turbo",
