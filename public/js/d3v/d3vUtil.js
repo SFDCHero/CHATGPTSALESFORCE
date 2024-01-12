@@ -1336,7 +1336,7 @@ var d3vUtil = {
 				
 		return "\n"                                                               +
 	           " *************************\n"                                     +
-	           " *   Welcome to ASIDE!   *\n"                                     +
+	           " *   Welcome to Chat GPT!   *\n"                                     +
 	           " *************************"                                       +
 	           "\n\n"                                                             +
 	           " Want to write code?\n"                                           +
@@ -2723,7 +2723,7 @@ var d3vUtil = {
 	 * @description displays a welcome message to the user and sets the document title
 	 **/
 	displayWelcomeMessage : function() {
-		d3vUtil.alert("Hi " + aside.user.firstname + ", welcome to ASIDE", { scheme : 'positive' });
+		d3vUtil.alert("Hi " + aside.user.firstname + ", welcome to ChatGPT-IDE", { scheme : 'positive' });
 	},
 	
 	/**
