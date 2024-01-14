@@ -1593,7 +1593,7 @@ var d3vCode = {
 			var btnSubmit = document.getElementById('chatgptmsgclick')
 		
 			status.style.display = 'block'
-			status.innerHTML = 'Carregando...'
+			status.innerHTML = 'loading...'
 			btnSubmit.disabled = true
 			btnSubmit.style.cursor = 'not-allowed'
 			message.disabled = true
