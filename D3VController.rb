@@ -2030,7 +2030,7 @@ class D3VController
 					qr[:readOnly] = true
 					qr[:isZip] = true
 				else 
-					errorMsg = "Note: This file cannot be viewed with ASIDE, to download it press command+shift+d.\n" +
+					errorMsg = "Note: This file cannot be viewed with CHATGPT SFDC, to download it press command+shift+d.\n" +
 					           "To update this file press command+u.\n\n" +
 					           "Resource Name: " + qr[:Name] + "\n" +
 					           "Content Type:  " + qr[:ContentType]

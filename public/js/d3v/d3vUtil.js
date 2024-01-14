@@ -1236,7 +1236,7 @@ var d3vUtil = {
 	 *				Should only be called once, on dom ready.
 	 **/
 	initializeD3V : function() {
-	    d3vUtil.alert('ASIDE is loading...');
+	    d3vUtil.alert('CHATGPT SFDC is loading...');
 	    $('div#code-content').show(); 
 	    ace.require("ace/ext/language_tools");
 	    
