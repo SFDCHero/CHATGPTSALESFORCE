@@ -1628,7 +1628,9 @@ var d3vCode = {
 			.catch((e) => {
 				console.log(`Error -> ${e}`)
 				status.innerHTML = 'Somthing went wrong'+e;
-				d3vCode.parseApexClassFilename();
+				d3vCode.apexMode();
+	    		editor.getSession().setValue(NEW_CLASS_CODE);
+	    		d3vCode.enableTestFooter(true, false);
 			})
 			.finally(() => {
 				btnSubmit.disabled = false
