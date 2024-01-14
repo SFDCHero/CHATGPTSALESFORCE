@@ -1628,6 +1628,7 @@ var d3vCode = {
 			.catch((e) => {
 				console.log(`Error -> ${e}`)
 				status.innerHTML = 'Somthing went wrong'+e;
+				d3vCode.parseApexClassFilename();
 			})
 			.finally(() => {
 				btnSubmit.disabled = false
