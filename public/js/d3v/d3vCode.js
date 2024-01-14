@@ -930,7 +930,7 @@ var d3vCode = {
 		$('#foot-related').click(d3vCode.showRelatedFiles);
 		$('span#foot-rt').click(d3vTest.executeCurrentTest);
 		$('span#foot-th').click(d3vCode.toggleCoverageHighlights);
-		$('span#foot-chatgpt').click(d3vCode.toggleChatGPT);
+		//$('span#foot-chatgpt').click(d3vCode.toggleChatGPT);
 		$('#chatgptmsgclick').click(d3vCode.sendMessage);
 		$('span#foot-download').click(d3vCode.downloadEditorContents);
 		$('.foot-version').click(d3vCode.openUpdateDialog);
@@ -947,6 +947,9 @@ var d3vCode = {
 			d3vPopups.showGlobalPanel('Find in All Code', '#ocs-popup');
 		});
 		
+		$('#foot-chatgpt').click(function() {
+			d3vPopups.showGlobalPanel('CHAT GPT', '#chatgpt-popup');
+		});
 		//keep popup find in sync with footer find
 		$('input#footer-find').keyup(function() {
 			$('textarea#find-textarea').val($(this).val());
